@@ -8,5 +8,7 @@ Subdirectories:
 
  (These should be considered historical versions; working scripts should be maintained in pipeline repo, or other dev or production repos as appropriate )
  
+* Data:     example data files for some of the scripts
+ 
 * Images:   hosting miscellaneous plots, etc. for wiki to refer to
 
