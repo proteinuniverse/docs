@@ -1,6 +1,8 @@
 # docs
 
-This is intendeded to be a general document repo for PUP activities.
+This is intendeded to be a general document repo for PUP activities, with most of the information content and activity occuring in the wiki.
+
+Subdirectories:
 
 * Scripts:  miscellaneous scripts that were used in the analysis described in the wiki. 
 
