@@ -1,4 +1,4 @@
-#uniparc  <- scan("uniparc.lens" )
+#uniparc  <- scan("uniparc.lens" )   # uncomment to reload. very big file
 #leone_hf <- scan( "LEONE.HF.lens" )
 #leone_lf <- scan( "LEONE.LF.lens")
 
