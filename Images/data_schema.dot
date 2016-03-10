@@ -1,0 +1,47 @@
+
+digraph main 
+   {
+    node [shape=box];
+    edge [len=2];
+    md5 -> sequence [label="1 to 1"];
+    
+    sequence -> seq_id [label="1 to many"];
+    
+    seq_id -> source_type [label="1 to 1"];
+
+    subgraph cluster0 {
+         chromosome;
+        "other isolate info";
+        label = "If source = isolate";
+        color = blue;
+    }
+    seq_id -> chromosome
+    seq_id -> "other isolate info";
+ 
+    subgraph cluster1 {     
+        contig;
+        "other metagnome info";
+        label="if source = metagnome";
+        color = blue;
+    }
+
+    seq_id -> contig;
+    seq_id -> "other metagnome info";
+
+    subgraph cluster2 {
+        coordinates
+        rank
+        label= "if source = isolate or metagenome"
+        color = blue;
+    }
+    seq_id -> "coordinates"
+    seq_id -> rank
+
+
+    subgraph cluster3 {
+        "reference info" ;
+        label="if reference";
+        color = blue;
+    }
+    seq_id -> "reference info";
+   }
